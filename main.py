@@ -10,7 +10,7 @@ from twilio.rest import Client
 
 
 URL = "https://api.openweathermap.org/data/2.5/onecall"  # Endpoint
-my_api_key = "59108cb758efbaac0417df79f1863251"  # get form the twillio website
+my_api_key = "Your Twillio API KEY"  # get form the twillio website
 
 
 my_email = "Youremail@gmail.com"
@@ -113,7 +113,7 @@ client = Client(Account_SID, Auth_Token)
 
 # Get this from your twillio account
 from_whatsapp_number = "whatsapp:+14155123886"
-# to_whatsapp_number = f"whatsapp:{os.environ.get('WHATSAPP')}"    # +94779434493
+# to_whatsapp_number = f"whatsapp:{os.environ.get('WHATSAPP')}"    # your number (notification receiver)
 to_whatsapp_number = f"whatsapp:{+94771111193}"
 
 client.messages.create(
